@@ -1,3 +1,81 @@
+/* Reset */
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Variables */
+:root {
+  --color-blue: blue;
+  --color-red: red;
+  --color-yellow: yellow;
+}
+
+/* Globals */
 body {
-  background-color: blue;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-areas:
+    ". header header ."
+    "main main main main"
+    "footer footer footer footer";
+}
+
+header {
+  grid-area: header;
+  background-color: var(--color-yellow);
+  height: 560px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  align-content: center;
+}
+nav {
+  background-color: var(--color-blue);
+  display: flex;
+  flex: 2;
+}
+
+.nav {
+  display: flex;
+  align-self: center;
+  justify-content: baseline;
+  border: 1px solid red
+}
+.hero {
+  display: flex;
+  background-color: var(--color-red);
+  flex: 4;
+}
+.hero-title {
+  align-self: center;
+}
+main {
+  background-color: var(--color-blue);
+  grid-area: main;
+  height: 200px;
+}
+
+.main-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1px;
+  
+}
+
+.main-container .item {
+  border: 1px solid red
+}
+
+footer {
+  background-color: var(--color-red);
+  grid-area: footer;
+  height: 90px;
 }
