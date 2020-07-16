@@ -22,7 +22,6 @@ body {
   height: 100vh;
   max-width: 1440px;
   margin: 0 auto;
-  overflow: hidden;
 }
 
 .grid-container {
@@ -32,6 +31,8 @@ body {
     "header header header header"
     "main main main main"
     "footer footer footer footer";
+
+  grid-template-rows: 60vh 30vh 10vh;
 }
 
 /* Header */
@@ -48,7 +49,7 @@ header {
   align-items: center;
   flex-direction: column;
   align-content: center;
-  height: 600px;
+  
 }
 
 nav {
