@@ -60,13 +60,14 @@ nav {
   align-self: center;
   justify-content: center;
   background: rgb(123, 123, 123);
-  background: linear-gradient(
-    180deg,
-    rgba(123, 123, 123, 1) 41%,
-    rgba(123, 123, 123, 1) 43%,
-    rgba(96, 96, 96, 1) 48%,
-    rgba(115, 115, 115, 1) 100%
-  );
+  background:
+    linear-gradient(
+      180deg,
+      rgba(123, 123, 123, 1) 41%,
+      rgba(123, 123, 123, 1) 43%,
+      rgba(96, 96, 96, 1) 48%,
+      rgba(115, 115, 115, 1) 100%
+    );
   border-radius: 5px;
 }
 
