@@ -23,7 +23,7 @@ The project is built using Html and Css with an extensive use of the grid, flex 
 
 ## Live Demo
 
-[Live Demo Link](https://raw.githack.com/cristianCeamatu/microverse-new-york-times-article-page/adding-article-page/index.html)
+[Live Demo Link](https://raw.githack.com/liraD/microverse-apple-mockup/feature-layout/index.html)
 
 ## To get a local copy up and running follow these simple example steps.
 

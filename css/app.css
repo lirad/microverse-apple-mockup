@@ -74,7 +74,8 @@ nav {
 .nav li {
   padding: 6px 30px;
   color: #ffffff;
-  font-size: medium;
+  font-size: small;
+  position: relative;
 }
 
 .nav li a {
@@ -85,26 +86,35 @@ nav {
 .nav li input {
   font-size: small;
   background-color: inherit;
-  padding: 3px 5px 3px 30px;
+  padding: 3px 5px 3px 22px;
   border-radius: 50px;
   width: 110px;
   border-top-color: #444;
   border-top-width: 1px;
   border-left-width: 0;
+  transition: all 0.4s ease-in-out;
+}
+
+.nav li input:focus + i {
+  color: #333;
+}
+
+.nav li input:focus {
+  width: 200px;
+  transition: all 0.4s ease-in-out;
+  border: none;
+  outline: none;
 }
 
 .nav li label i.fa-search {
-  position: relative;
-  right: -20px;
   font-size: 10px;
+  position: absolute;
+  left: 22px;
+  top: 12px;
 }
 
 .nav li input:focus {
   background-color: #ffffff;
-}
-
-.nav li input:focus ~ i {
-  color: #000000;
 }
 
 .nav li:not(:last-of-type):hover {
@@ -116,8 +126,12 @@ nav {
 }
 
 .nav li:first-child {
-  font-size: x-large;
+  font-size: 20px;
   padding: 2px 30px;
+}
+
+.nav li:last-child {
+  padding: 6px 15px;
 }
 
 .hero {
@@ -228,4 +242,8 @@ footer a {
 footer .footer-copyright {
   text-align: left;
   margin-top: 15px;
+}
+
+/* Animations */
+@keyframes {
 }
