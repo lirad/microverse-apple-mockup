@@ -4,10 +4,11 @@
 
 > This is an Apple homepage clone using HTML and CSS3 from the web archive.
 
-## Screenshots of website
+## Screenshots of our website
 
-![screenshot](./.github/screenshots/app-screenshot-before-full.png)
+![screenshot](./.github/screenshots/app-screenshot-after-full.png)
 
+### You can check the original [website here](https://web.archive.org/web/20140301004610/http://www.apple.com/)
 
 The project is built using Html and Css with an extensive use of the gradient background css properties.
 
