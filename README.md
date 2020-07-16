@@ -1,19 +1,19 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Positioning and Floating Elements project: New York Times article page
+# Building with Backgrounds and Gradients project: Apple homepage clone from 2014
 
-> This is a New York Times article page clone using HTML and CSS3.
+> This is an Apple homepage clone using HTML and CSS3 from the web archive.
 
 ## Screenshots of original website
 
-![screenshot](./app-screenshot-original-full.png)
+![screenshot](./.github/screenshots/app-screenshot-before-full.png)
 
 ## Screenshots of our clone website
 
-![screenshot](./app-screenshot-clone-full.png)
+![screenshot](./.github/screenshots/app-screenshot-after-full.png)
 
 
-The project is built using Html and Css with an extensive use of the grid, flex and float css properties.
+The project is built using Html and Css with an extensive use of the gradient background css properties.
 
 ## Built With
 
