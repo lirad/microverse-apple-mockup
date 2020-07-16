@@ -13,6 +13,7 @@ ul {
 
 /* Variables */
 :root {
+  --color-test: #3a3a3a;
   --color-blue: blue;
   --color-red: red;
   --color-yellow: yellow;
@@ -20,7 +21,9 @@ ul {
 
 /* Globals */
 body {
-  font-family: Helvetica, sans-serif;
+  font-family: 'Lato', sans-serif;
+  text-align: center;
+  line-height: 1.6;
 }
 
 .grid-container {
@@ -32,6 +35,8 @@ body {
     "footer footer footer footer";
 }
 
+/* Header */
+
 header {
   grid-area: header;
   background-color: #ffffff;
@@ -39,16 +44,15 @@ header {
   background-position: center -600px;
   background-size: cover;
   background-repeat: no-repeat;
-  padding: 100px 15px 300px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   align-content: center;
+  height: 600px;
 }
 
 nav {
-  background-color: #ccc;
   display: flex;
   flex: 2;
 }
@@ -57,21 +61,21 @@ nav {
   display: flex;
   align-self: center;
   justify-content: baseline;
-  border-radius: 5px;
-}
-
-.nav li {
-  padding: 10px 30px;
-  color: #ffffff;
   background: rgb(123, 123, 123);
   background: linear-gradient(
     180deg,
     rgba(123, 123, 123, 1) 41%,
     rgba(123, 123, 123, 1) 43%,
     rgba(96, 96, 96, 1) 48%,
-    rgba(115, 115, 115, 1) 100%,
-    rgba(9, 9, 121, 1) 100%
+    rgba(115, 115, 115, 1) 100%
   );
+  border-radius: 5px;
+}
+
+.nav li {
+  padding: 8px 30px;
+  color: #ffffff;
+  font-size: medium;
 }
 
 .nav li a {
@@ -80,10 +84,14 @@ nav {
 }
 
 .nav li input {
-  font-size: 14px;
+  font-size: small;
   background-color: inherit;
   padding: 3px 5px 3px 30px;
   border-radius: 50px;
+  width: 110px;
+  border-top-color: #444;
+  border-top-width: 1px;
+  border-left-width: 0;
 }
 
 .nav li label i {
@@ -108,18 +116,55 @@ nav {
 }
 
 .nav li:first-child {
-  font-size: 24px;
-  padding: 5px 30px;
+  font-size: x-large;
+  padding: 6px 30px;
 }
 
 .hero {
   display: flex;
-  background-color: var(--color-red);
   flex: 4;
+  flex-direction: column;
+  color: white;
 }
+
+
+.hero a {
+  text-decoration: none;
+  font-weight: lighter;
+  color: inherit;
+}
+
+.hero a:first-child {
+  flex: 1;
+}
+
+.hero a:last-child {
+  flex: 4;
+
+}
+
 .hero-title {
   align-self: center;
+  font-weight: lighter;
+  font-size: 4rem;
 }
+
+.hero-subtitle {
+  font-size: 2rem;
+  max-width: 63%;
+  margin: auto;
+  font-weight: normal;
+}
+
+.hero-link {
+  font-size: 1.5rem;
+  margin-top: 25px;
+}
+
+.hero-link:hover {
+ text-decoration: underline;
+}
+
 main {
   background-color: var(--color-blue);
   grid-area: main;
